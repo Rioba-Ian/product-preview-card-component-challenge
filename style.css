@@ -10,7 +10,7 @@ body {
 main {
     width: 600px;
     height: auto;
-    margin: 20vh auto 0 auto;
+    margin: 22vh auto 0 auto;
     background-color: hsl(0, 0%, 100%);
     border-radius: 10px;
 }
@@ -24,7 +24,7 @@ article {
     display: flex;
     flex-direction: column;
     margin-left: 20px;
-    margin-top: 10px;
+    margin-top: 2.5em;
     padding-right: 20px;
 }
 
@@ -51,7 +51,8 @@ article {
 .article-container>h1 {
     font-family: 'Fraunces', sans-serif;
     color: hsl(212, 21%, 14%);
-    font-size: 30px;
+    font-size: 38px;
+    font-weight: 700;
     margin: 0;
 
 }
@@ -89,6 +90,7 @@ article {
 .prices>small {
     font-family: 'Montserrat', sans-serif;
     color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
 }
 
 .price-button {
@@ -129,6 +131,10 @@ article {
 
     .price-button {
         margin-bottom: 20px;
+    }
+
+    .article-container {
+        margin-top: 0;
     }
 
 }
