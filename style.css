@@ -28,19 +28,24 @@ article {
     padding-right: 20px;
 }
 
-.perfume-img {
+.perfume-img-desktop {
     height: auto;
     max-width: 50%;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
 
+.perfume-img-mobile {
+    display: none;
+}
+
 .article-container>h3 {
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     color: hsl(228, 12%, 48%);
-    font-weight: 500;
-
+    font-weight: 300;
+    font-size: 16px;
+    margin-top: 20px;
 }
 
 .article-container>h1 {
@@ -48,13 +53,13 @@ article {
     color: hsl(212, 21%, 14%);
     font-size: 30px;
     margin: 0;
-    width: 70%;
-    line-height: 80%;
+
 }
 
 .article-container>p {
     font-family: 'Montserrat', sans-serif;
     color: hsl(228, 12%, 48%);
+    margin-bottom: 0;
 }
 
 .attribution {
@@ -64,4 +69,66 @@ article {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+.prices {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+    margin-top: 0;
+}
+
+.prices>h1 {
+    color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces', sans-serif;
+    font-size: 30px;
+}
+
+.prices>small {
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+}
+
+.price-button {
+    background-color: hsl(158, 36%, 37%);
+    color: #fff;
+    padding: 15px 10px;
+    border: hsl(158, 36%, 37%);
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.cart-image {
+    margin-right: 5px;
+}
+
+/* If the screen size is 600px wide or less, hide the element */
+@media only screen and (max-width: 600px) {
+    .perfume-img-desktop {
+        display: none;
+    }
+
+    article {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .perfume-img-mobile {
+        display: inline;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    main {
+        max-width: 80%;
+        margin: 10vh auto 0 auto;
+    }
+
+    .price-button {
+        margin-bottom: 20px;
+    }
+
 }
